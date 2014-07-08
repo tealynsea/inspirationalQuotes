@@ -1,0 +1,25 @@
+.heading {
+
+	height: 300px;
+	width: 100%;
+	background-color: cyan;
+	color: deepskyblue;
+	font-family: Crafty Girls;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 50px;
+	padding-top: 50px;
+	position: relative;
+	display: inline-block;
+}
+
+#headimage {
+	position: absolute;
+	margin-left: -360px;
+	margin-top: -50px;
+	float: left;
+}
+
+#inputBox {
+	margin:  20px 175px ;
+}
