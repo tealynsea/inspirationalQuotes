@@ -1,3 +1,10 @@
+
+/*body {
+	display: inline-block;
+	margin-left: 100px;
+}*/
+
+
 .heading {
 
 	height: 300px;
@@ -20,6 +27,21 @@
 	float: left;
 }
 
-#inputBox {
-	margin:  20px 175px ;
+#new-quote {
+
+	border: 2px solid black;
+	width: 300px;
+	margin-left: 75px;
+	margin-top: 50px;
+	display: inline-block;
+	padding: 40px;
+}
+#quotes-ul {
+
+	height: 300px;
+	width:  700px;
+	border: 2px solid black;
+	/*margin-left: 35px;*/
+	float: right;
+	margin-right: 20px;
 }

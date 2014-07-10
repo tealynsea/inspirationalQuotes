@@ -2,37 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled</title>
+  <title>Inspirational Quotes</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
   <link href='http://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	
  
-<div class="heading"><img id="headimage" src="http://www.funlava.com/wp-content/uploads/2014/05/Challenge-Quotes-57.jpg" height="350" width="350">Inspirational Quotes</div>
-
-
-<div>
- 	
-
-
-
-
-
- 	<form id = 'inputBox'>
-		<textarea type="text" value="Share your favorite inspirational quote" rows= "18" cols = "60" placeholder= "Share your favorite inspirational quote here."></textarea>
-			
-		
-		<input type="submit" value="Share">
-	</form>
+	<div class="heading"><img id="headimage" src="http://www.funlava.com/wp-content/uploads/2014/05/Challenge-Quotes-57.jpg" height="350" width="350">Inspirational Quotes</div>
+<!--Allowing user to add new quote and author -->
+	<form id="new-quote">
+	<!--new quote -->
+		<div class = "input-group">
+			<textarea class='enterQuote' name="quote" type="text" placeholder="Enter your favorite quote here."></textarea> 
+		</div>
 	
+	<!--Add author -->
+		<div class ="input-group">
+			<input name="author" type="text" placeholder="Quote author">
+		</div>
+
+	<!--Submit new quote button -->
+		<div class = "input-group">
+			<input type="submit" value="Add Quote/Author">
+		</div>
+	</form>
+
+	<ul id="quotes-ul">
+
+	</ul>
 
 
 
 
 
-</div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="main.js"></script>
 
