@@ -5,7 +5,7 @@ quotes_list.push({
 		quote: 'Do or Do Not.  There is No Try.',
 		author: 'Yoda'
 });
-console.log('worked')
+//console.log('worked')
 
 quotes_list.push({
 		quote: 'Control. Control.  You must have control',
@@ -21,14 +21,16 @@ var renderList = function(){
 	//Loop through and render each quote
 	for (var i = 0; i < quotes_list.length; i++) {
 		//create a new DOM list element 
-		var newListItem = $('<li>');
-		console.log('new list item stored')
+		var newListItem = $('<li class="quoteLines">');
+		//console.log('new list item stored')
 
 		//Append an p with the current quote
 		newListItem.append('<p>' + quotes_list[i].quote + '</p>');
-		   console.log('appended?')
+		   //console.log('appended?')
 		newListItem.append('<h5>' + quotes_list[i].author + '</h5>');
-           console.log('appended?')
+           //console.log('appended?')
+
+
 
 		var actionsContainer = $('<div class ="actions">');
 		//puts saved quotes into list items
@@ -36,6 +38,7 @@ var renderList = function(){
 
 		//Add delete action
 		actionsContainer.append('<button class="delete">Delete</button>');
+		actionsContainer.append('<div class"rating"><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span><span>&#9734</span></div>');
 
 		newListItem.prependTo('#quotes-ul');
 
@@ -107,7 +110,18 @@ var deleteQuote = function(eventArguments) {
 	quotes_list.splice(quoteIndex, 1);
 }
 
+/*var Starratings = function() {
+}
 
+Starratings.prototype.create = function(){
+	this.el=$('<i class= star icon-star');
+	return this.el
+}*/
+
+/*$(document).on('click', '.openstar span', function(){
+	$(this).css(
+				background-color: 'red');
+});*/
 
 $(document).on('ready', function() {
  
@@ -117,6 +131,10 @@ $(document).on('ready', function() {
 	$('#new-quote').on('submit', newQuoteSubmit);
 
 	$(document).on('click', '.delete', deleteQuote);
+
+	
+
+	 
 
 });
 

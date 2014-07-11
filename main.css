@@ -40,8 +40,18 @@
 
 	height: 300px;
 	width:  700px;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	/*margin-left: 35px;*/
 	float: right;
 	margin-right: 20px;
+
 }
+
+.quoteLines {
+	border: 1px solid black;
+	list-style: none;
+	border-radius: 8px;
+	padding: 8px;
+}
+
+ 
